@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  padding:0;
+}
+.main{
+  background-color:#7a212e ;
+  height:10vh;
+  position:fixed;
+  top:0;
+  width: 100%;
+
+}
+
+.t{
+  float:right;
+  margin-top: 25px;
+}
+
+a{
+  padding: 5px 20px;
+  color:#fff;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-size:17px;
+}
+
+a:hover{
+  background-color: white;
+  color:#000;
+}
+
+.logo img{
+  float:left;
+  width:70px;
+  height:auto;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
