@@ -1,0 +1,32 @@
+body{
+    background-image: url("rec1.jpg");
+    background-size: 100% 105%;
+    background-repeat: no-repeat;
+    background: cover;
+    background-attachment: fixed;
+    overflow: scroll;
+    font-family: 'Simonetta';
+}
+#i1,#i2,#i3,#i4{
+    font-size: 200%;
+    float: right;
+}
+label{
+    font-size: 200%;
+    color: wheat;
+    font-family: 'Simonetta' ;
+}
+#p{
+    float: left;
+    padding: 50px;
+    width: 40% ;
+    margin-top: 10%;
+    background-color: #432616;
+    opacity: 0.85;
+    margin: 40px;
+}
+#address{
+    float: right ;
+    vertical-align: top;
+    font-size: 150%;
+}
