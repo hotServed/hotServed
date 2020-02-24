@@ -7,29 +7,80 @@
     <title>
         Login page
     </title>
+    <script type="text/javascript">
+        function swap(ref){
+            if(ref.getAttribute("data-tab") == "login"){
+                document.getElementById("form-body").classList.remove('active');
+                ref.parentNode.classList.remove('signup');
+            } else {
+                document.getElementById("form-body").classList.add('active');
+                ref.parentNode.classList.add('signup');
+            }
+        }
+        </script>
 </head>
-
 <body>
-    <form>
-        <div id="hotServed"></div>
-        <h1 id="hot"> hot </h1>
-        <h1 id="Served"> Served </h1>
+    <h1 id="hot"> hot </h1>
+    <h1 id="Served"> Served </h1>
+    <div class="form">
+        <div class="head" class="signup">
+            <div onclick="swap(this)" data-tab="login" class="login-tab">Login</div>
+            <div onclick="swap(this)" data-tab="signup" class="signup-tab">Signup</div>
         </div>
-        <div id="loginBlock">
-            <h1 id="login">Login</h1>
-            <input type="text" style="width: 250px;height: 30px;" placeholder="Username / Mobile No."><br><br>
-            <input type="password" style="width: 250px;height: 30px;" placeholder="Password..">
-            <p id="or"> or </p>
-            <div class="col">
-                <a href="#" class="fb btn">
-                    <i class="fa fa-facebook fa-fw"></i>Login with facebook </a>
-                <a href="#" class="google btn"><i class="fa fa-google fa-fw">
-                    </i> Login with Google+</a><br>
-            </div>
-            <button> Submit </button> <br>
-            <button onclick="location.href='signup.html';"> Not registered?</button>
+        <div class="body" id="form-body">
+        <div class="login">
+        <div class="form-row">
+            <input type="text" placeholder="Email">
         </div>
-    </form>
+        <div class="form-row">
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="rem-row">
+            <input type="checkbox" id="rem">
+            <label for="rem">Remember me</label>
+        </div>
+        <div class="form-row">
+            <button>Login</button>
+        </div>
+        <div class="row">
+            <span>OR</span>
+        </div>    
+        <div class="footer">
+        <div class="social-form fb">
+          <i class="fa fa-facebook"></i> Login with Facebook
+        </div>
+        <div class="social-form google">
+          <i class="fa fa-google"></i> Login with Google
+        </div>
+      </div>
+    </div>
+    <div class="signup">
+        <div class="form-row">
+          <input type="text" placeholder="Name">
+        </div>
+        <div class="form-row">
+          <input type="email" placeholder="Email">
+        </div>      
+        <div class="form-row">
+          <input type="password" placeholder="Password">
+        </div>
+        <div class="form-row">
+          <input type="password" placeholder="Confirm Password">
+        </div>     
+        <div class="form-row" >
+            <textarea rows="2" cols="40" style="font-size: 58;" placeholder="Address"></textarea>
+        </div>
+        <div class="rem-row">
+          <input type="checkbox" id="agr">
+          <label for="agr">Agree terms & conditions.</label>
+        </div>      
+        <div class="form-row">
+          <button>Sign up</button>
+        </div>      
+      </div>
+    </div>
+  </div>
+   
 </body>
 
 </html>
