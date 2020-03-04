@@ -11,21 +11,26 @@
         function swap(ref){
             if(ref.getAttribute("data-tab") == "login"){
                 document.getElementById("form-body").classList.remove('active');
-                ref.parentNode.classList.remove('signup');
+                ref.classList.toggle("active");
+                document.getElementById("signup").classList.toggle("active");
+                // ref.parentNode.classList.remove('signup');
             } else {
                 document.getElementById("form-body").classList.add('active');
-                ref.parentNode.classList.add('signup');
+                ref.classList.toggle("active");
+                document.getElementById("login").classList.toggle("active");
+                // ref.parentNode.classList.add('signup');
             }
         }
+        
         </script>
 </head>
 <body>
     <h1 id="hot"> hot </h1>
     <h1 id="Served"> Served </h1>
     <div class="form">
-        <div class="head" class="signup">
-            <div onclick="swap(this)" data-tab="login" class="login-tab">Login</div>
-            <div onclick="swap(this)" data-tab="signup" class="signup-tab">Signup</div>
+        <div class="head">
+            <div onclick="swap(this)" data-tab="login" class="login-tab active" id="login">Login</div>
+            <div onclick="swap(this)" data-tab="signup" class="signup-tab" id="signup">Signup</div>
         </div>
         <div class="body" id="form-body">
         <div class="login">
