@@ -1,0 +1,43 @@
+
+*{
+  margin:0;
+  padding:0;
+}
+.main{
+  background-color:#432616;
+  color:#fff ;
+  height:10vh;
+  position:fixed;
+  top:0;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+
+}
+
+.t{
+  float:right;
+  margin-top: 25px;
+}
+
+a{
+  padding: 5px 30px;
+  color:#fff;
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-size:17px;
+}
+
+a:hover{
+  background-color: white;
+  color:#000;
+}
+
+.logo img{
+  float:left;
+  width:67px;
+  height:auto;
+}
+
+
+
+    

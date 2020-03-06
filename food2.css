@@ -1,0 +1,22 @@
+.thunmbnail-slider{
+  width:100%;
+  float:left;
+  overflow:hidden;
+}
+
+.thumbnail-slider .thumbnail-container{
+  width:100%;
+  float:left;
+}
+
+.thumbnail-slider .item{
+  height:250px;
+  background-color:grey;
+  line-height:250px;
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  float: left;
+}
+
+
