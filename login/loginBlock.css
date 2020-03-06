@@ -6,6 +6,12 @@ body {
     background: cover;
     background-attachment: fixed;
 }
+
+.login-tab.active, .signup-tab.active{
+    background: wheat !important;
+    color: black !important;
+}
+
 .form{
     position:absolute;
     padding: 30px;
@@ -58,14 +64,9 @@ body {
     left:0%;
 }
 
-.form .head.signup > div:nth-child(1),.form .head > div:nth-child(2) {
-  /*  background:transparent !important;*/
-    background: wheat;
-
-}
-.form .head.signup > div:nth-child(2){
+.form .head > div{
  /*   background: wheat;*/
-    background:transparent!important;
+    /* background:transparent!important; */
     color: wheat;
 }
 /* .form .body .form-row label {
