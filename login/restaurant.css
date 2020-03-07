@@ -1,0 +1,59 @@
+body{
+    font-family: 'Caladea', serif;
+}
+.sidenav {
+    height: 100%;
+    width: 350px;
+    position: fixed;
+    top: 180px;
+    left: 0;
+    background-color: rgb(250, 237, 212);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+.sidenav a {
+padding: 6px 8px 6px 160px;
+text-decoration: none;
+font-size: 25px;
+color: #432616;
+display: block;
+}
+
+.sidenav a:hover {
+color: #c26733;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.res {
+    color: #432616;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 140px;
+    background-color:#432616;
+}
+ .res-name {
+    margin-left: 375px;
+    font-size: 25px;
+    margin-top: -25px;
+    color: #f5deb3;
+} 
+.res-photo {
+    margin-left: 130px;
+    width: 200px;
+    height: 140px;
+    float: left;
+}
+.rating{
+    margin-left: 50px;
+    top: 300px;
+    color: wheat;
+    font-size: 25px;
+}
