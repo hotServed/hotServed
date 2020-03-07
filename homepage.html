@@ -17,7 +17,7 @@
             </div>
             <div class="t">
                 <a href="#" class="a">Offers</a>
-                <a href="file:///C:/Users/Kartik/Documents/New%20folder%20(2)/hotServed/loginPage.html" class="a">Login/Signup</a>
+                <a href="#" class="a">Login/Signup</a>
                 <a href="#" class="a">Cart</a>
             </div>
             <div class="t">
@@ -31,27 +31,82 @@
                 </div>
               </div>
         </div>
-    </header>   
+    </header>
 
-    <div class="slider-box">
-    <p class="time">New</p>
-    <div class="img-box">
-    <img src="https://www.google.co.in/url?sa=i&url=https%3A%2F%2Fwww.justdial.com%2Fphotos%2Fsannidhi-family-restaurant-kandivali-west-mumbai-north-indian-restaurants-ro51e9n3rv-pc-100128005-sco-43rp41sh&psig=AOvVaw1AJtwgfTV-inPml2VKJNDp&ust=1583302165210000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIjb-KvS_ecCFQAAAAAdAAAAABAR">
-    </div>
-    <p class="detail">
-    <a href="#" class="price">Price-40$</a>
-    </p>
-    <div class="cart">
-    <a href="#">Add to Cart</a>
+    <div class="form">
+        <p id="para1">Offers</p>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="https://cdn.grabon.in/gograbon/images/merchant/1545547346420.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/originals/30/74/bc/3074bcb35ab6b33f3ad3222a0a33d7bc.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://cdn.grabon.in/gograbon/images/category/1546252575451.png" style="width:100%">
+            </div>
+
         </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function currentSlide(n) {
+                showSlides2(slideIndex = n);
+            }
+
+            function showSlides2(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+
     </div>
-
-
-
-
-
-
-
 
 
     <div class="footer">

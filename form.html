@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Register Form</title>
+</head>
+
+<body>
+    <form action="login/register.php" method="POST">
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Type :</td>
+                <td>
+                    <input type="radio" name="type" value="c" required>Costumer
+                    <input type="radio" name="type" value="r" required>Resaturant
+                </td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Adress :</td>
+                <td>
+                    <input type="adress" name="adress" required>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
