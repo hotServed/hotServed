@@ -3,21 +3,21 @@ body{
 }
 .sidenav {
     height: 100%;
-    width: 350px;
+    width: 22.83%;
     position: fixed;
     top: 180px;
     left: 0;
     background-color: rgb(250, 237, 212);
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 90px;
   }
   
 .sidenav a {
-padding: 6px 8px 6px 160px;
-text-decoration: none;
-font-size: 25px;
-color: #432616;
-display: block;
+    padding: 6px 8px 6px 160px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #432616;
+    display: block;
 }
 
 .sidenav a:hover {
@@ -41,9 +41,9 @@ color: #c26733;
 }
  .res-name {
     margin-left: 375px;
-    font-size: 25px;
-    margin-top: -25px;
-    color: #f5deb3;
+    font-size: 45px;
+    margin-top: 5px;
+    color: rgb(250, 237, 212);
 } 
 .res-photo {
     margin-left: 130px;
@@ -54,6 +54,35 @@ color: #c26733;
 .rating{
     margin-left: 50px;
     top: 300px;
-    color: wheat;
+    color: rgb(250, 237, 212);
     font-size: 25px;
+}
+.description{
+    margin-left: 1050px;
+    color: rgb(250, 237, 212);
+    float: right;
+    margin-top: -140px;
+    font-size: 19px;
+}
+.search-bar{
+    margin-top: 100px;
+    width: 500px;
+    height: 30px;
+    font-size: 17px;
+    margin-left: 50px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    padding-left: 10px;
+}
+.side-icons{
+    float: right;
+    margin-top: -39px;
+}
+#hr1{
+    width: 77.17%;
+    float: right;
+    margin-top: 20px;
+    color:#432616;
 }
