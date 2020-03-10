@@ -129,7 +129,7 @@ a:link {
     margin-left: 40px;
   }
   .sub-div{
-    overflow:hidden;
+    overflow:auto;
     position: relative;
     background-color: white;
     float: left;
@@ -140,12 +140,14 @@ a:link {
   }
   
   .vl{
+    position: fixed;
     margin-left:360px;
     border-left: 3px solid #432616;
     height: 500px;
   }
   .help-list{
-    position: relative;
+    /* overflow: auto; */
+    position: fixed ;
     text-align: right;
     padding-top: 30px;
     padding-left: 30px;
@@ -153,10 +155,50 @@ a:link {
     color: #432616;
     float: left;
   }
-  .Terms, .FAQ, .Account-settings, .rate,.issue{
+  #Terms, #FAQ, #Account-settings, #rate,#issue,#about-us{
     position: relative;
     padding-bottom: 20px;
   }
-  .Terms:hover, .FAQ:hover, .Account-settings:hover, .rate:hover,.issue:hover{
+  #Terms:hover, #FAQ:hover, #Account-settings:hover, #rate:hover,#issue:hover, #about-us:hover {
     color: #c26733;
   }
+  .help-content{
+    overflow: auto;
+    position: relative;
+    padding-left: 64px;
+    color: #432616;
+    width: 855px;
+    margin-left: 363px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .hr-content{
+    width: 840px;
+    float: left;
+    margin-top: 10px;
+  }
+  #Terms-content, #FAQ-content, #Account-settings-content, #rate-content,#issue-content,#about-us-content{
+    display: none;
+  }
+  .q1{
+    padding-bottom: 20px ;
+    font-size: 30px;
+  }
+  .span1{
+    font-size: 20px;
+    letter-spacing: 0.03em;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+     border-radius:5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;  
+  }
+  
