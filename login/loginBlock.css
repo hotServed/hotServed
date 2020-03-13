@@ -5,6 +5,8 @@ body {
     background-repeat: no-repeat;
     background: cover;
     background-attachment: fixed;
+    overflow: hidden;
+    font-family: 'Caladea', serif;
 }
 
 .login-tab.active, .signup-tab.active{
@@ -187,7 +189,34 @@ body {
     margin-left: -18%;
     margin-top: 20%;
 }
+#icon{
+    float: left;
+    width: 500px ;
+    height: auto;
+    margin-right: 370px;
+    margin-top: 200px;
+    position: relative;
+    left: -340px;
+    top: 140px;
+}
 
 ::placeholder {
     font-size: 150%;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+     border-radius:5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;  
+  }
+  .signup {
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
