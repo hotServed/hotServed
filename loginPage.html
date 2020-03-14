@@ -27,73 +27,100 @@
 
 <body>
     <form action="login/register.php" method="POST"></form>
-    <h1 id="hot"> hot </h1>
-    <h1 id="Served"> Served </h1>
-    <img src="login/oglogo3.png" id="icon">
-    <div class="form">
-        <div class="head">
-            <div onclick="swap(this)" data-tab="login" class="login-tab active" id="login">Login</div>
-            <div onclick="swap(this)" data-tab="signup" class="signup-tab" id="signup">Signup</div>
+    <header>
+        <div class="main">
+          <div class="logo">
+            <img src="homepage/newlogo2.jpg">
         </div>
-        <div class="body" id="form-body">
-            <div class="login">
-                <div class="form-row">
-                    <input type="text" placeholder="Email">
+            <span style="font-size: 25px; top: 25px; left: 15px; position: relative;">
+                hotServed
+            </span>
+            <div class="t">
+                <a href="#" class="a">Offers</a>
+                <a href="#" class="a">Login/Signup</a>
+                <a href="#" class="a">Cart</a>
                 </div>
-                <div class="form-row">
-                    <input type="password" placeholder="Password">
-                </div>
-                <div class="rem-row">
-                    <input type="checkbox" id="rem">
-                    <label for="rem">Remember me</label>
-                </div>
-                <div class="form-row">
-                    <button>Login</button>
-                </div>
-                <div class="row">
-                    <span>OR</span>
-                </div>
-                <div class="footer">
-                    <div class="social-form fb">
-                        <i class="fa fa-facebook"></i> Login with Facebook
+                <div class="t">
+                    <div class="flexbox">
+                        <div class="search">
+                          <div>
+                            <input type="text" placeholder="       Search . . ." required>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="social-form google">
-                        <i class="fa fa-google"></i> Login with Google
+            </div>
+        </header>
+        <div class="inner-div">
+            <div id="hot-Served">
+                <h1 id="hot"> hot </h1>
+                <h1 id="Served"> Served </h1>
+                <img src="login/oglogo3.png" id="icon">
+            </div>
+            <div class="form">
+                <div class="head">
+                    <div onclick="swap(this)" data-tab="login" class="login-tab active" id="login">Login</div>
+                    <div onclick="swap(this)" data-tab="signup" class="signup-tab" id="signup">Signup</div>
+                </div>
+                <div class="body" id="form-body">
+                    <div class="login">
+                        <div class="form-row">
+                            <input type="text" placeholder="Email">
+                        </div>
+                        <div class="form-row">
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div class="rem-row">
+                            <input type="checkbox" id="rem">
+                            <label for="rem">Remember me</label>
+                        </div>
+                        <div class="form-row">
+                            <button>Login</button>
+                        </div>
+                        <div class="row">
+                            <span>OR</span>
+                        </div>
+                        <div class="footer">
+                            <div class="social-form fb">
+                                <i class="fa fa-facebook"></i> Login with Facebook
+                            </div>
+                            <div class="social-form google">
+                                <i class="fa fa-google"></i> Login with Google
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup" style="overflow: scroll;">
+                        <div class="radio">
+                            <span style="font-size: 200%; color: rgb(250, 237, 212);"> Account type: </span><br>
+                            <input type="radio" name="type" value="customer"> <span style="font-size: 125%;color: rgb(250, 237, 212);"> Customer</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="radio" name="type" value="restaurant"> <span style="font-size: 125%;color: rgb(250, 237, 212);"> Restaurant</span>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" name="username" placeholder="Name"><br>
+                        </div>
+                        <div class="form-row" >
+                            <input type="email" name="email" placeholder="Email"><br>
+                        </div>
+                        <div class="form-row">
+                            <input type="password" name="password" placeholder="Password"><br>
+                        </div>
+                        <div class="form-row">
+                            <input type="password" placeholder="Confirm Password"><br>
+                        </div>
+                        <div class="form-row">
+                            <textarea rows="2" cols="40" style="font-size: 58;" name="address" placeholder="Address"></textarea><br>
+                        </div>
+                        <div class="rem-row">
+                            <input type="checkbox" id="agr">
+                            <label for="agree-terms">Agree terms & conditions.</label><br>
+                        </div>
+                        <div class="form-row">
+                            <button > Submit </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="signup" style="overflow: scroll;">
-                <div class="radio">
-                    <span style="font-size: 200%; color: wheat;"> Account type: </span><br>
-                    <input type="radio" name="type" value="customer"> <span style="font-size: 125%;color: wheat;"> Customer</span> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" name="type" value="restaurant"> <span style="font-size: 125%;color: wheat;"> Restaurant</span>
-                </div>
-                <div class="form-row">
-                    <input type="text" name="username" placeholder="Name"><br>
-                </div>
-                <div class="form-row" >
-                    <input type="email" name="email" placeholder="Email"><br>
-                </div>
-                <div class="form-row">
-                    <input type="password" name="password" placeholder="Password"><br>
-                </div>
-                <div class="form-row">
-                    <input type="password" placeholder="Confirm Password"><br>
-                </div>
-                <div class="form-row">
-                    <textarea rows="2" cols="40" style="font-size: 58;" name="address" placeholder="Address"></textarea><br>
-                </div>
-                <div class="rem-row">
-                    <input type="checkbox" id="agr">
-                    <label for="agree-terms">Agree terms & conditions.</label><br>
-                </div>
-                <div class="form-row">
-                    <button > Submit </button>
-                </div>
-            </div>
+            </div> 
         </div>
-    </div>
-
 </body>
 
 </html>

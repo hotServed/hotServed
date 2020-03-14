@@ -1,6 +1,8 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 body {
-    background-image: url("img105.jpg");
+    /* background-image: url("img105.jpg"); */
+    /* background-color: rgb(250, 237, 212); */
+    background-color: rgb(207, 203, 196);
     background-size: 100% 105%;
     background-repeat: no-repeat;
     background: cover;
@@ -8,9 +10,118 @@ body {
     overflow: hidden;
     font-family: 'Caladea', serif;
 }
+.inner-div{
+    margin-top: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* background-color: rgb(207, 203, 196); */
+    background-color: rgb(250, 241, 224);
+    width: 83%;
+    height: 520px;
+  }
+.t{
+    float:right;
+    margin-top: 25px;
+  }
+  
+.logo img{
+    float:left;
+    width:62px;
+    height:auto;
+  }
+  .main{
+    background-color:#432616;
+    color:#fff ;
+    height:10vh;
+    position:fixed;
+    top:0;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+  }
+  
+  .a{
+    padding:5px 30px;
+    color:#fff;
+    text-decoration: none;
+    transition:0.5s ease;
+    font-size:17px;
+}
+
+a:hover{
+    background-color: #fff;
+    color:#000;
+}
+a:link {
+  
+  text-decoration: none;
+}
+.flexbox {
+    background: linear-gradient(155deg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search {
+    margin: 0px;
+    margin-right: 85%;
+  }
+  
+   
+  .search > div {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search > div:after {
+    content: "";
+    background: white;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 24px;
+    right: 1px;
+    transform: rotate(135deg);
+    box-shadow: 1px 0;
+  }
+  
+  .search > div > input {
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px white;
+    outline: none;
+    border-radius: 35px;
+    box-shadow: 0 1px;
+    transition: width 0.5s;
+  }
+  
+  .search > div > input::placeholder {
+    color: #efefef;
+    opacity: 1;
+  }
+  
+  
+  .search > div > input::-ms-placeholder {
+    color: #efefef;
+  }
+  
+  .search > div > input::-ms-input-placeholder {
+    color: #efefef;
+  }
+  
+  .search > div > input:focus,
+  .search > div > input:valid {
+    width: 250px;
+  }
 
 .login-tab.active, .signup-tab.active{
-    background: wheat !important;
+    background: rgb(250, 237, 212) !important;
     color: black !important;
 }
 
@@ -22,7 +133,9 @@ body {
     padding-bottom: 50px;
     width: 320px;
     height: 380px;
-    transform:translate(180%,34%);
+    /* transform:translate(180%,34%); */
+    margin-left: 45%;
+    margin-top: 3%;
     opacity: 0.8 ;
     background-color: #432616;
 }
@@ -69,7 +182,7 @@ body {
 .form .head > div{
  /*   background: wheat;*/
     /* background:transparent!important; */
-    color: wheat;
+    color: rgb(250, 237, 212);
 }
 /* .form .body .form-row label {
     display:block;
@@ -95,7 +208,7 @@ body {
     height:45px;
     background:#198123;
     text-transform:uppercase;
-    color:wheat;
+    color:rgb(250, 237, 212);
     font-size:16px;
     cursor:pointer;
     margin-top: 10px;
@@ -103,7 +216,7 @@ body {
 .form .body .signup .form-row button {
     background:#198123;
     margin-top: -5px;
-    color: wheat;
+    color: rgb(250, 237, 212);
 }
 .form .body .signup .form-row button:hover{
     background:#23a130;
@@ -127,7 +240,7 @@ body {
     margin-left:5px;
     cursor:pointer;
     margin-top: -50px;
-    color: wheat;
+    color: rgb(250, 237, 212);
 }
 .form .body .row {
     text-align:center;
@@ -145,7 +258,7 @@ body {
 .form .body .row span {
     font-size:25px;
     position:relative;
-    color:wheat;
+    color:rgb(250, 237, 212);
     font-weight:600;
 }
 .form .body .footer {
@@ -169,35 +282,41 @@ body {
     height:40px;
     line-height:40px;
     text-indent:2%;
-    color: #f5deb2;
+    color: rgb(250, 240, 223);
     position:relative;
     font-size:19px;
     cursor:pointer;
   }
+
+#hot-Served{
+    position: fixed;
+}
 #hot {
-    font-size: 600%;
+    position: fixed;
+    font-size: 700%;
     color: #432616;
     float: left;
-    margin-left: 33%;
-    margin-top: 15%;
+    margin-left: 26%;
+    margin-top: 17%;
 }
 
 #Served {
-    font-size: 600%;
+    position: fixed;
+    font-size: 700%;
     color: #432616;
     float: left;
-    margin-left: -18%;
-    margin-top: 20%;
+    right: 55%;
+    margin-top: 23%;
 }
 #icon{
     float: left;
-    width: 500px ;
+    width:530px ;
     height: auto;
-    margin-right: 370px;
-    margin-top: 200px;
-    position: relative;
-    left: -340px;
-    top: 140px;
+    /* margin-right: 370px; */
+    margin-top: 13.36%;
+    position: fixed;
+    right: 43.49%;
+    margin-top: 1%;
 }
 
 ::placeholder {

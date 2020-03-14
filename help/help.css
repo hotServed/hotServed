@@ -2,6 +2,7 @@ body{
   font-family: 'Caladea', serif;
   background-color: rgb(250, 237, 212);
 }
+
 .t{
     float:right;
     margin-top: 25px;
@@ -9,7 +10,7 @@ body{
   
 .logo img{
     float:left;
-    width:67px;
+    width:61px;
     height:auto;
   }
   .main{
